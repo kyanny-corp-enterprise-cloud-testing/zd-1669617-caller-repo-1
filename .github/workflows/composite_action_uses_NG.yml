@@ -1,0 +1,15 @@
+name: 'Composite action uses NG'
+
+on:
+  workflow_dispatch:
+    inputs:
+      version:
+        required: true
+        type: text
+
+jobs:
+  call_composite_action:
+    runs-on: ubuntu-latest
+    name: 'Composite action uses NG'
+    steps:
+      - uses: kyanny-corp-enterprise-cloud-testing/zd-1669617-called-repo-1/.github/actions@${{ inputs.version }}
