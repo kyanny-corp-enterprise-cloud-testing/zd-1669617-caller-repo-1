@@ -1,0 +1,13 @@
+name: 'Call composite action 1'
+
+on:
+  push:
+  workflow_dispatch:
+
+jobs:
+  call_composite_action:
+    runs-on: ubuntu-latest
+    name: 'Call composite action 1'
+    steps:
+      - uses: kyanny-corp-enterprise-cloud-testing/zd-1669617-called-repo-1@v0
+    
