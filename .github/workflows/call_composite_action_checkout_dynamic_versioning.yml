@@ -1,7 +1,6 @@
 name: 'Call composite action checkout dynamic versioning'
 
 on:
-  push:
   workflow_dispatch:
     inputs:
       version:
