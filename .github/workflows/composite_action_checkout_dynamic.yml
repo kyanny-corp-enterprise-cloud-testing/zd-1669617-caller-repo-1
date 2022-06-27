@@ -1,4 +1,4 @@
-name: 'Call composite action checkout dynamic versioning'
+name: 'Composite action checkout dynamic'
 
 on:
   workflow_dispatch:
@@ -10,13 +10,11 @@ on:
 jobs:
   call_composite_action:
     runs-on: ubuntu-latest
-    name: 'Call composite action checkout static versioning'
+    name: 'Composite action checkout dynamic'
     steps:
       - uses: actions/checkout@v3
         with:
           repository: kyanny-corp-enterprise-cloud-testing/zd-1669617-called-repo-1
-          ref: ${{inputs.version}}
+          ref: ${{ inputs.version }}
           path: zd-1669617-called-repo-1
-      - run: ls -lah
-      - run: tree .
       - uses: ./zd-1669617-called-repo-1/.github/actions
