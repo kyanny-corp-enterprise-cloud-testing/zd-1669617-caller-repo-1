@@ -7,7 +7,6 @@ on:
       version:
         required: true
         type: text
-        default: main
 
 jobs:
   call_composite_action:
