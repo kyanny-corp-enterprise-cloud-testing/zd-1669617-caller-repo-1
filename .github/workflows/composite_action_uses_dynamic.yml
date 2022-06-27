@@ -1,4 +1,4 @@
-name: 'Composite action uses NG'
+name: 'Composite action uses dynamic'
 
 on:
   workflow_dispatch:
@@ -10,6 +10,6 @@ on:
 jobs:
   call_composite_action:
     runs-on: ubuntu-latest
-    name: 'Composite action uses NG'
+    name: 'Composite action uses dynamic'
     steps:
       - uses: kyanny-corp-enterprise-cloud-testing/zd-1669617-called-repo-1/.github/actions@${{ inputs.version }}
