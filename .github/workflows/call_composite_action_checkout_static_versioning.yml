@@ -13,6 +13,7 @@ jobs:
         with:
           repository: kyanny-corp-enterprise-cloud-testing/zd-1669617-called-repo-1
           ref: v1
+          path: zd-1669617-called-repo-1
       - run: ls -lah
       - run: tree .
       - uses: ./zd-1669617-called-repo-1/.github/actions
