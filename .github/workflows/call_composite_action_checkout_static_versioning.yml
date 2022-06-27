@@ -1,7 +1,6 @@
 name: 'Call composite action checkout static versioning'
 
 on:
-  push:
   workflow_dispatch:
 
 jobs:
